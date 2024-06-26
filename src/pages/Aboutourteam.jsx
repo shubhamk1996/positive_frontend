@@ -27,7 +27,7 @@ const Aboutourteam = () => {
       <Container>
         <Row>
           {teamMembers.map(member => (
-            <Col md={4} xs={6} key={member.id} className="mb-4">
+            <Col md={4} xs={12} key={member.id} className="mb-4">
               <Card
                 onMouseEnter={() => handleHover(member.id)}
                 onMouseLeave={handleLeave}

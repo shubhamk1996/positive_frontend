@@ -7,7 +7,7 @@ const Shopnow = () => {
     return (
         <Container fluid className='shopnow py-sm-4 py-lg-0'>
             <Row>
-                <Col xs={9} className=' justify-content-center d-flex  '>
+                <Col md={9} xs={12} className=' justify-content-center d-flex text-center text-lg-start  '>
                     <div className=' align-content-center'>
                         <h2 className=' text-uppercase'>"Streamline Your Dispensing Process</h2>
                         <h1 className=' text-uppercase'>   Shop Now <span className=' fs-1'> !"</span> </h1>
@@ -15,7 +15,7 @@ const Shopnow = () => {
                     </div>
 
                 </Col>
-                <Col xs={3} className=' d-grid justify-content-end px-0' >
+                <Col md={3} xs={12}  className=' d-grid justify-content-end px-0' >
                     <div className='ok'>
                         <div className='imshopnow'>
                             <div className=' text-center  imshopdata px-3'>

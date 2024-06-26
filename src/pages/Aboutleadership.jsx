@@ -40,19 +40,19 @@ const Aboutleadership = () => {
       </Container>
       <Container fluid>
         {leadershipData.map((leader, index) => (
-          <Row key={index}>
+          <Row key={index} className='mb-5 mb-lg-0'>
             {index % 2 === 0 ? (
               <>
-                <Col xs={6} className='px-0'>
+                <Col xs={12} lg={6} className='px-0'>
                   <img src={leader.imgSrc} className='img-fluid' alt={leader.name} />
                 </Col>
-                <Col xs={6} className='p-5 d-grid align-items-center'>
+                <Col xs={12} lg={6} className='p-lg-5 p-3 d-flex align-items-center'>
                   <div>
                     <h2 className='text-uppercase fw-bold' style={{ letterSpacing: "2px" }}>
                       {leader.name}
                     </h2>
                     <h4>{leader.title}</h4>
-                    <p className='fw-medium lh-1'>{leader.description}</p>
+                    <p className='fw-medium lh-base'>{leader.description}</p>
                     <div>
                       <FaFacebook className='fs-1 mx-2' />
                       <FaInstagram className='fs-1 mx-2' />
@@ -63,22 +63,22 @@ const Aboutleadership = () => {
               </>
             ) : (
               <>
-                <Col xs={6} className='p-5 d-grid align-items-center'>
+                <Col xs={12} lg={{ order: 'last', span: 6 }} className='px-0'>
+                  <img src={leader.imgSrc} className='img-fluid' alt={leader.name} />
+                </Col>
+                <Col xs={12} lg={{ order: 'first', span: 6 }} className='p-lg-5 p-3  d-flex align-items-center'>
                   <div>
                     <h2 className='text-uppercase fw-bold' style={{ letterSpacing: "2px" }}>
                       {leader.name}
                     </h2>
                     <h4>{leader.title}</h4>
-                    <p className='fw-medium lh-1'>{leader.description}</p>
+                    <p className='fw-medium lh-base'>{leader.description}</p>
                     <div>
                       <FaFacebook className='fs-1 mx-2' />
                       <FaInstagram className='fs-1 mx-2' />
                       <FaLinkedin className='fs-1 mx-2' />
                     </div>
                   </div>
-                </Col>
-                <Col xs={6} className='px-0'>
-                  <img src={leader.imgSrc} className='img-fluid' alt={leader.name} />
                 </Col>
               </>
             )}

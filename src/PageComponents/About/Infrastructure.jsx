@@ -43,7 +43,7 @@ const Infrastructure = () => {
         <Heading heading="Infrastructure"/>
       <Row>
         {cardData.map((card, index) => (
-          <Col key={index} xs={6} md={6} lg={4} className="mb-4 rounded-4 p-lg-4 text-center">
+          <Col key={index} xs={12} md={6} lg={4} className="mb-4 rounded-4 p-lg-4 text-center">
             <Card className="h-100 rounded-4 infrastructurecard border-bottom border-3 border-danger border-end-0 border-top-0 border-start-0">
               <Card.Img variant="top" src={card.imgSrc} alt={card.title}  className=' rounded-4'/>
               <Card.Body>
